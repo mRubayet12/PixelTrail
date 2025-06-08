@@ -1,0 +1,47 @@
+body {
+	background-image: url(src/assets/blank.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.display-seq-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+.color-row {
+	display: flex;
+	border: 3px solid black;
+	padding: 100px;
+	gap: 31px;
+}
+
+.user-choice-color-row {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	border: 3px solid black;
+	padding-left: 100px;
+	padding-right: 100px;
+	gap: 31px;
+}
+
+.timer {
+	font-family: "Courier New", Courier, monospace;
+	margin-bottom: 200px;
+}
+
+.result-block {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	margin-top: 200px;
+}
+
+.result-text {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 70px;
+}
