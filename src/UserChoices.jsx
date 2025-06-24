@@ -56,7 +56,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(0, props.color[0])}
 							style={{
-								border: isClicked[0] ? "3px solid red" : "1px solid gray",
+								border: isClicked[0]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[0][0]}, ${props.color[0][1]}, ${props.color[0][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[0]} />
@@ -64,7 +67,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(1, props.color[1])}
 							style={{
-								border: isClicked[1] ? "3px solid red" : "1px solid gray",
+								border: isClicked[1]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[1][0]}, ${props.color[1][1]}, ${props.color[1][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[1]} />
@@ -72,7 +78,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(2, props.color[2])}
 							style={{
-								border: isClicked[2] ? "3px solid red" : "1px solid gray",
+								border: isClicked[2]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[2][0]}, ${props.color[2][1]}, ${props.color[2][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[2]} />
@@ -80,7 +89,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(3, props.color[3])}
 							style={{
-								border: isClicked[3] ? "3px solid red" : "1px solid gray",
+								border: isClicked[3]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[3][0]}, ${props.color[3][1]}, ${props.color[3][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[3]} />
@@ -88,7 +100,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(4, props.color[4])}
 							style={{
-								border: isClicked[4] ? "3px solid red" : "1px solid gray",
+								border: isClicked[4]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[4][0]}, ${props.color[4][1]}, ${props.color[4][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[4]} />
@@ -96,7 +111,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(5, props.color[5])}
 							style={{
-								border: isClicked[5] ? "3px solid red" : "1px solid gray",
+								border: isClicked[5]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[5][0]}, ${props.color[5][1]}, ${props.color[5][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[5]} />
@@ -104,7 +122,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(6, props.color[6])}
 							style={{
-								border: isClicked[6] ? "3px solid red" : "1px solid gray",
+								border: isClicked[6]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[6][0]}, ${props.color[6][1]}, ${props.color[6][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[6]} />
@@ -112,7 +133,10 @@ function UserChoices(props) {
 						<div
 							onClick={() => RecordUserClick(7, props.color[7])}
 							style={{
-								border: isClicked[7] ? "3px solid red" : "1px solid gray",
+								border: isClicked[7]
+									? "3px solid red"
+									: `3px solid rgb(${props.color[7][0]}, ${props.color[7][1]}, ${props.color[7][2]})`,
+								borderRadius: "24px",
 							}}
 						>
 							<ColorTile color={props.color[7]} />
