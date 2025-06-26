@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-function Header(props) {
+function Tutorial() {
 	const [randColor, setRandColor] = useState([
 		GenerateRandomColor(),
 		GenerateRandomColor(),
@@ -12,10 +12,6 @@ function Header(props) {
 		GenerateRandomColor(),
 		GenerateRandomColor(),
 	]);
-
-	function clickHandler() {
-		props.setTutorial(true);
-	}
 
 	function GenerateRandomColor() {
 		return [
@@ -45,8 +41,9 @@ function Header(props) {
 	}, []);
 
 	return (
-		<header className="header">
-			<h1 className="header-text">
+		<div className="tut-div">
+			<h1>
+				How To Play{" "}
 				<span
 					style={{
 						color: `rgb(${randColor[0][0]}, ${randColor[0][1]}, ${randColor[0][2]})`,
@@ -118,16 +115,25 @@ function Header(props) {
 					l
 				</span>
 			</h1>
-
-			<button
-				type="button"
-				className="help-button"
-				onClick={() => clickHandler()}
-			>
-				?
+			<br></br>
+			<h2>1. Watch The Sequence</h2>
+			<ul>
+				<li>A pattern of colors will flash on the screen.</li>
+				<br></br>
+				<li>Pay attention to the order!</li>
+			</ul>
+			<br></br>
+			<h2>2. Repeat The Pattern</h2>
+			<ul>
+				<li>Click the color tiles in the same order they were shown.</li>
+			</ul>
+			<br></br>
+			<h2>Ready To Test Challenge Your Brain With This Colorful Experience?</h2>
+			<button type="button" onClick={() => window.location.reload()}>
+				Click To Start
 			</button>
-		</header>
+		</div>
 	);
 }
 
-export default Header;
+export default Tutorial;

@@ -1,13 +1,21 @@
 import Game from "./Game";
 import Header from "./Header";
 import Footer from "./Footer";
+import Tutorial from "./Tutorial";
+import { useState } from "react";
 
 function App() {
+	const [tutorial, setTutorial] = useState(false);
 	return (
 		<>
-			<Header></Header>
-			<Game></Game>
-			<Footer></Footer>
+			{!tutorial && (
+				<>
+					<Header setTutorial={setTutorial}></Header>
+					<Game></Game>
+					<Footer></Footer>
+				</>
+			)}
+			{tutorial && <Tutorial></Tutorial>}
 		</>
 	);
 }
